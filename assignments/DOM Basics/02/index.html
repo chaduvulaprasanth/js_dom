@@ -47,6 +47,23 @@
     <div class="demo-query-all">Access me by query all (2)</div>
     <script>
       // your code goes here
+      // changed color of the id #demo
+      document.getElementById("demo").style.color = "purple";
+      // chnaged color of the class .demo
+      function changeDemoColor() {
+        var democolor = document.getElementsByClassName("demo"); 
+        for (let i=0; i<democolor.length;i++) {
+          democolor[i].style.color = "orange";
+        }
+      }
+      changeDemoColor()
+      function changeArticleColor() {
+        var articlecolor = document.getElementsByTagName("article")
+      for (let i=0; i<articlecolor.length;i++) {
+          articlecolor[i].style.color = "blue";
+        }
+      }
+      changeArticleColor()
     </script>
   </body>
 </html>
