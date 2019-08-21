@@ -16,15 +16,17 @@
       p.innerHTML = "I love <strong>Javascript</strong>."
       document.body.appendChild(p);
       var ul=document.createElement('ul');
-    for(i=0;i<3;i++)
-    {
+      var listtext = ["Buy grocery", "Feed the cat", "Do laundry"]
+      for(i=0;i<listtext.length;i++)
+      {
         var li=document.createElement('li');
-        li.innerHTML="Buy grocery";
+        li.innerHTML = listtext[i];
         ul.appendChild(li);
-    }
-    document.body.appendChild(ul);
-    document.body.children[3].children[1].innerText = "Feed the cat";
-    document.body.children[3].children[2].innerText = "Do laundry";
+      }
+      document.body.appendChild(ul);
+      var newli = document.createElement("li");
+      newli.innerHTML = "New list";
+      ul.appendChild(newli);
    
 
 
