@@ -1,7 +1,7 @@
-var quotes;
+
 
 // Write your code here
-document.body.appendChild(quotes);
+
 
 
 quotes = [
@@ -314,3 +314,9 @@ quotes = [
         "quoteText": "Great talent finds happiness in execution."
     }
 ];
+function newQuote(){
+    var randomNumber = Math.floor((Math.random() * quotes.length-1));
+    document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
+
+}
+document.getElementById("quoteDisplay").addEventListener("click", random);
