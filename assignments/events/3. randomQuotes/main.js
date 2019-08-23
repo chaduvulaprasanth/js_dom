@@ -316,7 +316,7 @@ quotes = [
 ];
 function newQuote(){
     var randomNumber = Math.floor((Math.random() * quotes.length-1));
-    document.getElementById("quoteDisplay").innerHTML = quotes[randomNumber];
+    document.getElementById("#quoteDisplay").innerHTML= quotes[randomNumber];
 
 }
-document.getElementById("quoteDisplay").addEventListener("click", random);
+document.getElementById("#click").addEventListener("click", newQuote);

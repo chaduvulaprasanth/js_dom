@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mouse Move Cursor</h1>
+    <p id="screenx"></p>
+    <p id="screeny"></p>
+    <p id="clientx"></p>
+    <p id="clienty"></p>
+    <script>
+        function showCoords(event) {
+            var x = event.screenX;
+            var y = event.screenY;
+            var a = event.clientX;
+            var b = event.clientY;
+            document.getElementById("screenx").innerText = x;
+            document.getElementById("screeny").innerText = y;
+            document.getElementById("clientx").innerText = a;
+            document.getElementById("clienty").innerText = b;
+            }
+            document.addEventListener("mousemove", showCoords);
+    </script>
+    
+</body>
+</html>
