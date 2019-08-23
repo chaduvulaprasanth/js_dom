@@ -1,7 +1,7 @@
 var quotes;
 
 // Write your code here
-
+document.body.appendChild(quotes);
 
 
 quotes = [
