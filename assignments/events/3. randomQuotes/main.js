@@ -315,8 +315,11 @@ quotes = [
     }
 ];
 function newQuote(){
-    var randomNumber = Math.floor((Math.random() * quotes.length-1));
-    document.getElementById("#quoteDisplay").innerHTML= quotes[randomNumber];
+    var randomNumber = Math.floor((Math.random() * quotes.length));
+    document.getElementById("quoteDisplay").innerText= quotes[randomNumber].quoteText;
+    document.getElementById("quoteAuthor").innerText= quotes[randomNumber].quoteAuthor;
+
+
 
 }
-document.getElementById("#click").addEventListener("click", newQuote);
+document.getElementById("click").addEventListener("click", newQuote);
