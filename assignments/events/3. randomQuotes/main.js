@@ -1,15 +1,16 @@
 
 
 // Write your code here
-function newQuote(){
+function newQuote(event){
+    if (event.keyCode == 32) {
     var randomNumber = Math.floor((Math.random() * quotes.length));
     document.getElementById("quoteDisplay").innerText= quotes[randomNumber].quoteText;
     document.getElementById("quoteAuthor").innerText= quotes[randomNumber].quoteAuthor;
-
+    }
 
 
 }
-document.getElementById("click").addEventListener("click", newQuote);
+document.addEventListener("keyup", newQuote);
 
 
 quotes = [
