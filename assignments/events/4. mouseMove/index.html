@@ -13,12 +13,14 @@
     <p id="clientx"></p>
     <p id="clienty"></p>
     <script>
+        // function showCoords which takes mousemove event and shows screenX, scrrenY, clinetX, clientY
             function showCoords(event) {
-            document.getElementById("screenx").innerText = event.screenX;
-            document.getElementById("screeny").innerText = event.screenY;
-            document.getElementById("clientx").innerText = event.clientX;
-            document.getElementById("clienty").innerText = event.clientY;
+                document.getElementById("screenx").innerText = event.screenX;
+                document.getElementById("screeny").innerText = event.screenY;
+                document.getElementById("clientx").innerText = event.clientX;
+                document.getElementById("clienty").innerText = event.clientY;
             }
+       // addevent listner on document which takes mousemove event and showCoords function
             document.addEventListener("mousemove", showCoords);
     </script>
     
