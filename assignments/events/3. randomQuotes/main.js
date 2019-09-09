@@ -1,7 +1,18 @@
-var quotes;
+
 
 // Write your code here
+// function newquote to generate a new quote by entering space key on keyboard
+function newQuote(event){
+    if (event.keyCode == 32) {
+    var randomNumber = Math.floor((Math.random() * quotes.length));
+    document.getElementById("quoteDisplay").innerText= quotes[randomNumber].quoteText;
+    document.getElementById("quoteAuthor").innerText= quotes[randomNumber].quoteAuthor;
+    }
 
+
+}
+// addeventlistner "keyup" which takes spacekey and newquote function
+document.addEventListener("keyup", newQuote);
 
 
 quotes = [

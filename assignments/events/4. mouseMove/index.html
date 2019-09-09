@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mouse Move Cursor</h1>
+    <p id="screenx"></p>
+    <p id="screeny"></p>
+    <p id="clientx"></p>
+    <p id="clienty"></p>
+    <script>
+        // function showCoords which takes mousemove event and shows screenX, scrrenY, clinetX, clientY
+            function showCoords(event) {
+                document.getElementById("screenx").innerText = event.screenX;
+                document.getElementById("screeny").innerText = event.screenY;
+                document.getElementById("clientx").innerText = event.clientX;
+                document.getElementById("clienty").innerText = event.clientY;
+            }
+       // addevent listner on document which takes mousemove event and showCoords function
+            document.addEventListener("mousemove", showCoords);
+    </script>
+    
+</body>
+</html>

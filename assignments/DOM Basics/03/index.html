@@ -39,5 +39,18 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+    // change the background color of the first `li` in the `ul`.
+    document.body.children[3].firstElementChild.style.backgroundColor = "blue";
+    // change the background color of all the `li` in `ul`.
+    var change = document.body.children[3].children;
+    for(let i=0; i<change.length; i++) {
+    change[i].style.backgroundColor = "yellow";  
+  }
+  // third
+  ul.childNodes[3].style.color = "pink"
+  // fourth
+  ul.childNodes[3].style.color = "pink"
+  // fifth
+  ul.childNodes[3].nextSibling.style.color = "yellow"
   </script>
 </html>
